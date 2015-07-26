@@ -36,6 +36,7 @@ function cron_oracle_predict() {
   $history = \Drupal::state()->get('cron_oracle_history', []);
 
   sort($history);
+  $history[] = REQUEST_TIME;
 
   $differences = [];
   foreach ($history as $key => $time) {

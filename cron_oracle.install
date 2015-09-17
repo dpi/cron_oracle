@@ -1,7 +1,8 @@
 <?php
 
-use Drupal\Component\Utility\SafeMarkup;
-
+/**
+ * Implements hook_requirements().
+ */
 function cron_oracle_requirements($phase) {
   $requirements = [];
 
